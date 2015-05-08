@@ -467,7 +467,7 @@ private:
 * });
 * // create a feature spave containing the text (bag of words) extractor, where the values are normalized,
 * // weighted with 'tfidf' and the tokenizer is of 'simple' type, it uses english stopwords.
-* var ftr = qm.FeatureSpace(base, { 
+* var ftr = new qm.FeatureSpace(base, { 
 *              type: "text", source: "Articles", field: "Text", normalize: true, weight: "tfidf",
 *              tokenizer: { type: "simple", stopwords: "en"}
 *           });
